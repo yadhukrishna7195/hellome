@@ -26,20 +26,30 @@
 <body>
 
   <section class="d-none d-lg-block d-xl-block desk-nav">
-    <header class="header">
+    <header class="header" id="navi">
       <div class="container">
         <nav class="bottom-nav">
-          <div class="bottom-nav-item active">
-            <a href="#a">
+          <div class="bottom-nav-item">
+            <a class="active"  href="javascript:void(0);" style="text-decoration: none" onclick="home()">
             <div class="bottom-nav-link">
               <i class="fas fa-house-user"></i>
               <span>Home</span>
             </div></a>
           </div>
-  
-  
+
+
           <div class="bottom-nav-item">
-            <a href="#b">
+            <a href="Javascript:void(0)" style="text-decoration: none"  onclick="about()">
+            <div class="bottom-nav-link">
+              <i class="fas fa-comments"></i>
+              <span>About</span>
+            </div></a>
+          </div>
+
+
+
+          <div class="bottom-nav-item">
+            <a href="javascript:void(0);" style="text-decoration: none" onclick="skills()">
             <div class="bottom-nav-link">
               <i class="fas fa-laptop-code"></i>
               <span>Skills</span>
@@ -47,10 +57,12 @@
           </div>
   
           <div class="bottom-nav-item">
+            <a href="javascript:void(0);" style="text-decoration: none" onclick="contact()">
             <div class="bottom-nav-link">
               <i class="fas fa-comments"></i>
               <span>Contact</span>
             </div>
+            </a>
           </div>
         </nav>
       </div>
@@ -58,7 +70,7 @@
   
 </section>
 
-  <div class="container" id="a">
+  <div class="container" id="home">
 
     <div class="row h-100">
 
@@ -77,7 +89,7 @@
         
               <div class="col-lg-6">
          
-             <p  class="text-white">I'm Yadhu Krishna c s, a full-stack Web Developer based in Kerala India.
+             <p  class="text-white">I'm a full-stack Web Developer based in Kerala India.
               I’m available for hire on a very limited basis for fun things like HTML, CSS, JavaScript, Bootstrap, Python, Django.</p>
             
               </div>
@@ -96,7 +108,51 @@
 
 
 
-  <div class="container" id="b">
+
+  <div class="container" style="display:none" id="about">
+
+    <div class="row h-100">
+
+      <div class="col-sm-12 my-auto">
+        <div class="card">
+
+          <div class="card-body" style="padding: 4%;">
+
+            <div class="row">
+              <div class="col-lg-6 main-txt">
+                
+                <h2 class="text-white text-left font-weight-bold">WHO AM I?</h2>
+
+                <p  class="text-white">I'm Yadhu Krishna c s, a BCA graduated Full-Stack Web Developer based in Kerala-India.
+                  2 Years work experience in IT industry. 
+                  </p>
+                
+                  </div>
+              
+                  <div class="col-lg-6">
+         
+                    <img src="images/yadhu2.jpeg">
+                    
+                      </div>
+             
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="container"  style="display:none" id="skill">
 
     <div class="row h-100">
 
@@ -106,15 +162,63 @@
           <div class="card-body">
 
             <div class="row">
-              <div class="col-lg-6 main-txt">
+              <!-- <div class="col-lg-6 main-txt">
                 
-                <h2 class="text-white text-left font-weight-bold">My Skills</h2>
-              
+               
              
-              </div>
+              </div> -->
         
-              <div class="col-lg-6">
-                <img src="images/">
+              <div class="col-lg-12">
+                <h6 class="text-white text-left">SKILLS</h6>
+                <h2 class="text-white text-left font-weight-bold">What I'M GOOD</h2>
+              
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+                </div>
+
+                <br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+                </div>
+                <br>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                </div>
+                <br>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python</div>
+                </div>
+
+                <br>
+
+              
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Django</div>
+                </div>
+                <br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Sql</div>
+                </div>
+                <br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Git</div>
+                </div>
+     
+
+
+                <br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Linux</div>
+                </div>
+            
+      
+
+
+
+                
               </div>
             </div>
           </div>
@@ -127,6 +231,50 @@
 
 
   </div>
+
+
+
+
+
+
+
+  <div class="container" style="display:none" id="contact">
+
+    <div class="row h-100">
+
+      <div class="col-sm-12 my-auto">
+        <div class="card">
+
+          <div class="card-body" style="padding: 4%;">
+
+            <div class="row">
+              <div class="col-lg-6 main-txt">
+                
+                <h2 class="text-white text-left font-weight-bold">
+                  GET IN TOUCH!</h2>
+
+                <p  class="text-white">I'm Yadhu Krishna c s, a full-stack Web Developer based in Kerala India.
+                  I’m available for hire on a very limited basis for fun things like HTML, CSS, JavaScript, Bootstrap, Python, Django.</p>
+                
+                  </div>
+              
+            
+             
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
 
 
 
@@ -146,30 +294,46 @@
 
 
 <section class="d-lg-none d-xl-none mob-nav">
-  <header class="header">
+  <header class="header" id="Header">
     <div class="container">
       <nav class="bottom-nav">
-        <div class="bottom-nav-item active">
+        <div class="bottom-nav-item ">
+          <a class="active" href="javascript:void(0);" style="text-decoration: none" onclick="home()">
           <div class="bottom-nav-link">
             <i class="fas fa-house-user"></i>
             <span>Home</span>
-          </div>
+          </div></a>
+        </div>
+
+
+
+        <div class="bottom-nav-item">
+          <a href="Javascript:void(0)" style="text-decoration: none"  onclick="about()">
+          <div class="bottom-nav-link">
+            <i class="fas fa-comments"></i>
+            <span>About</span>
+          </div></a>
         </div>
 
 
         <div class="bottom-nav-item">
+          <a href="javascript:void(0);" style="text-decoration: none" onclick="skills()">
           <div class="bottom-nav-link">
             <i class="fas fa-laptop-code"></i>
             <span>Skills</span>
-          </div>
+          </div></a>
         </div>
 
+
+
         <div class="bottom-nav-item">
+          <a href="Javascript:void(0)" style="text-decoration: none"  onclick="about()">
           <div class="bottom-nav-link">
             <i class="fas fa-comments"></i>
             <span>Contact</span>
-          </div>
+          </div></a>
         </div>
+        
       </nav>
     </div>
   </header>
@@ -178,11 +342,47 @@
 
 
 
+<script>
+  function skills(){
+      $('#skill').show()
+      $('#home').hide()
+      $('#about').hide()
+      $('#contact').hide()
+     
+  }
+
+  function home(){
+      $('#home').show()
+      $('#skill').hide()
+      $('#about').hide()
+      $('#contact').hide()
+     
+  }
+
+  function about(){
+      $('#about').show()
+      $('#skill').hide()
+      $('#home').hide()
+      $('#contact').hide()
+     
+  }
+
+
+  function contact(){
+      $('#contact').show()
+      $('#skill').hide()
+      $('#home').hide()
+      $('#about').hide()
+     
+  }
+</script>
+
 
 
 
 
   <!-- jQuery ,Popper.js, Bootstrap JS -->
+  <script src="js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -193,6 +393,18 @@
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
 
+
+    <script>
+
+$(document).ready(function(){
+  $('header nav a').click(function(){
+    $('nav a').removeClass("active");
+    $(this).addClass("active");
+});
+});
+    </script>
+      
 </body>
+
 
 </html>

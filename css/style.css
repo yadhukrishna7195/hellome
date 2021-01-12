@@ -34,6 +34,9 @@
     padding: 17%;
 }
 
+#skill .card-body {
+    padding: 7%;
+}
 
 .card-title{
 
@@ -59,7 +62,7 @@
     left: 0;
     right: 0;
     padding: 0.8rem 0;
-    background-color: #252a32;
+    background-color:  #ffffff;
     z-index: 99;
     will-change: transform;
     -webkit-transform: translateZ(0);
@@ -93,6 +96,15 @@
 
 
 
+/* nav active */
+
+.active, a:hover {
+    color: #fffc00; 
+    text-decoration: underline;
+}
+
+
+#about img{width: 91%;}
 
 
 
@@ -220,3 +232,34 @@
         }
     
     }
+
+
+
+
+/* 
+
+    skills */
+
+
+
+    .progress-bar {
+      
+      color: #000000bf;
+      background-color: #fffc00;
+  
+  }
+
+
+  #b .card-body {
+    padding: 12%;
+}
+
+
+
+
+
+
+/* About card */
+
+
+
