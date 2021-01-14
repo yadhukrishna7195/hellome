@@ -99,17 +99,74 @@
 /* nav active */
 
 .active, a:hover {
-    color: #fffc00; 
-    text-decoration: underline;
+    color: #000000;
+   
+}
+
+
+
+
+#myCarousel p,#myCarousel h6,#myCarousel h4,#myCarousel ul li,#myCarousel ul li a{
+    color: #fff!important
 }
 
 
 #about img{width: 91%;}
 
 
+#myCarousel .card{
 
-     
-     
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    /* filter: blur(0.2px); */
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.425);
+
+}
+
+
+#myCarousel .card-body {
+    padding: 10%;
+}
+
+.btn-outline-secondary {
+    color: #dadada;
+    border-color: #ffffff61;
+}
+
+.btn-outline-secondary:hover {
+    color: #f9f9f9;
+    background-color: #ffffff7d;
+    border-color: #c7c7c7bf;
+}
+/* downlod resum button */
+
+.dw-btn{
+    z-index: 1;
+    position: absolute;
+    left: 54%;
+    padding-top: 21%;
+}
+
+.dw-btn .btn-danger {
+    color: #000;
+    background-color: #ffffffbd;
+    border-color:  #ffffffbd;
+}
+
+.btn-mob{
+    color: #000;
+    background-color: #ffffffbd;
+    border-color:  #ffffffbd;
+}
+
+/* 
+contact area */
+
+
 
 
 .circles{
@@ -119,6 +176,7 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
+        pointer-events: none;
     }
     
     .circles li{
@@ -262,4 +320,8 @@
 /* About card */
 
 
-
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none!important;
+}
